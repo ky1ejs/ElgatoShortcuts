@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		432EA691264FCD4000B33C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA690264FCD4000B33C55 /* AppDelegate.swift */; };
+		432EA693264FCD4000B33C55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA692264FCD4000B33C55 /* ContentView.swift */; };
+		432EA695264FCD4000B33C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432EA694264FCD4000B33C55 /* Assets.xcassets */; };
+		432EA69B264FCD4000B33C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 432EA699264FCD4000B33C55 /* Main.storyboard */; };
+		432EA72326514C9B00B33C55 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 432EA72226514C9B00B33C55 /* OrderedCollections */; };
+		432EA72C2651732E00B33C55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 432EA72B2651732E00B33C55 /* Preview Assets.xcassets */; };
+		432EA7352651736100B33C55 /* ElgatoShortcutsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA7342651736100B33C55 /* ElgatoShortcutsTests.swift */; };
+		432EA73F2651750000B33C55 /* LightConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 432EA73E2651750000B33C55 /* LightConfig.json */; };
+		432EA7432651776200B33C55 /* BrightnessUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 432EA7422651776200B33C55 /* BrightnessUpdate.json */; };
+		432EA74D265177B000B33C55 /* IsOnUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 432EA74C265177B000B33C55 /* IsOnUpdate.json */; };
+		432EA753265179C800B33C55 /* TemperatureUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 432EA752265179C800B33C55 /* TemperatureUpdate.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		432EA7372651736100B33C55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 432EA685264FCD4000B33C55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 432EA68C264FCD4000B33C55;
+			remoteInfo = ElgatoShortcuts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		432EA6CB2650399300B33C55 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432EA71526510DEA00B33C55 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 1;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		432EA68D264FCD4000B33C55 /* ElgatoShortcuts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElgatoShortcuts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		432EA690264FCD4000B33C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		432EA692264FCD4000B33C55 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		432EA694264FCD4000B33C55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		432EA69A264FCD4000B33C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		432EA69C264FCD4000B33C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432EA69D264FCD4000B33C55 /* ElgatoShortcuts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ElgatoShortcuts.entitlements; sourceTree = "<group>"; };
+		432EA72B2651732E00B33C55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		432EA7322651736100B33C55 /* ElgatoShortcutsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElgatoShortcutsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		432EA7342651736100B33C55 /* ElgatoShortcutsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElgatoShortcutsTests.swift; sourceTree = "<group>"; };
+		432EA7362651736100B33C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432EA73E2651750000B33C55 /* LightConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LightConfig.json; sourceTree = "<group>"; };
+		432EA7422651776200B33C55 /* BrightnessUpdate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BrightnessUpdate.json; sourceTree = "<group>"; };
+		432EA74C265177B000B33C55 /* IsOnUpdate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IsOnUpdate.json; sourceTree = "<group>"; };
+		432EA752265179C800B33C55 /* TemperatureUpdate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TemperatureUpdate.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		432EA68A264FCD4000B33C55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432EA72326514C9B00B33C55 /* OrderedCollections in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432EA72F2651736100B33C55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		432EA684264FCD4000B33C55 = {
+			isa = PBXGroup;
+			children = (
+				432EA68F264FCD4000B33C55 /* ElgatoShortcuts */,
+				432EA7332651736100B33C55 /* ElgatoShortcutsTests */,
+				432EA68E264FCD4000B33C55 /* Products */,
+				432EA6CF265039AF00B33C55 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		432EA68E264FCD4000B33C55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				432EA68D264FCD4000B33C55 /* ElgatoShortcuts.app */,
+				432EA7322651736100B33C55 /* ElgatoShortcutsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		432EA68F264FCD4000B33C55 /* ElgatoShortcuts */ = {
+			isa = PBXGroup;
+			children = (
+				432EA690264FCD4000B33C55 /* AppDelegate.swift */,
+				432EA692264FCD4000B33C55 /* ContentView.swift */,
+				432EA694264FCD4000B33C55 /* Assets.xcassets */,
+				432EA699264FCD4000B33C55 /* Main.storyboard */,
+				432EA69C264FCD4000B33C55 /* Info.plist */,
+				432EA69D264FCD4000B33C55 /* ElgatoShortcuts.entitlements */,
+				432EA72A2651732E00B33C55 /* Preview Content */,
+			);
+			path = ElgatoShortcuts;
+			sourceTree = "<group>";
+		};
+		432EA6CF265039AF00B33C55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		432EA72A2651732E00B33C55 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				432EA72B2651732E00B33C55 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		432EA7332651736100B33C55 /* ElgatoShortcutsTests */ = {
+			isa = PBXGroup;
+			children = (
+				432EA7342651736100B33C55 /* ElgatoShortcutsTests.swift */,
+				432EA73E2651750000B33C55 /* LightConfig.json */,
+				432EA7422651776200B33C55 /* BrightnessUpdate.json */,
+				432EA74C265177B000B33C55 /* IsOnUpdate.json */,
+				432EA752265179C800B33C55 /* TemperatureUpdate.json */,
+				432EA7362651736100B33C55 /* Info.plist */,
+			);
+			path = ElgatoShortcutsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		432EA68C264FCD4000B33C55 /* ElgatoShortcuts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 432EA6A0264FCD4000B33C55 /* Build configuration list for PBXNativeTarget "ElgatoShortcuts" */;
+			buildPhases = (
+				432EA689264FCD4000B33C55 /* Sources */,
+				432EA68A264FCD4000B33C55 /* Frameworks */,
+				432EA68B264FCD4000B33C55 /* Resources */,
+				432EA6CB2650399300B33C55 /* Embed XPC Services */,
+				432EA71526510DEA00B33C55 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ElgatoShortcuts;
+			packageProductDependencies = (
+				432EA72226514C9B00B33C55 /* OrderedCollections */,
+			);
+			productName = ElgatoShortcuts;
+			productReference = 432EA68D264FCD4000B33C55 /* ElgatoShortcuts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		432EA7312651736100B33C55 /* ElgatoShortcutsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 432EA7392651736100B33C55 /* Build configuration list for PBXNativeTarget "ElgatoShortcutsTests" */;
+			buildPhases = (
+				432EA72E2651736100B33C55 /* Sources */,
+				432EA72F2651736100B33C55 /* Frameworks */,
+				432EA7302651736100B33C55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				432EA7382651736100B33C55 /* PBXTargetDependency */,
+			);
+			name = ElgatoShortcutsTests;
+			productName = ElgatoShortcutsTests;
+			productReference = 432EA7322651736100B33C55 /* ElgatoShortcutsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		432EA685264FCD4000B33C55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					432EA68C264FCD4000B33C55 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					432EA7312651736100B33C55 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 432EA68C264FCD4000B33C55;
+					};
+				};
+			};
+			buildConfigurationList = 432EA688264FCD4000B33C55 /* Build configuration list for PBXProject "ElgatoShortcuts" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 432EA684264FCD4000B33C55;
+			packageReferences = (
+				432EA72126514C9B00B33C55 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
+			productRefGroup = 432EA68E264FCD4000B33C55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				432EA68C264FCD4000B33C55 /* ElgatoShortcuts */,
+				432EA7312651736100B33C55 /* ElgatoShortcutsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		432EA68B264FCD4000B33C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432EA69B264FCD4000B33C55 /* Main.storyboard in Resources */,
+				432EA72C2651732E00B33C55 /* Preview Assets.xcassets in Resources */,
+				432EA695264FCD4000B33C55 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432EA7302651736100B33C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432EA73F2651750000B33C55 /* LightConfig.json in Resources */,
+				432EA74D265177B000B33C55 /* IsOnUpdate.json in Resources */,
+				432EA7432651776200B33C55 /* BrightnessUpdate.json in Resources */,
+				432EA753265179C800B33C55 /* TemperatureUpdate.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		432EA689264FCD4000B33C55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432EA693264FCD4000B33C55 /* ContentView.swift in Sources */,
+				432EA691264FCD4000B33C55 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432EA72E2651736100B33C55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				432EA7352651736100B33C55 /* ElgatoShortcutsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		432EA7382651736100B33C55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 432EA68C264FCD4000B33C55 /* ElgatoShortcuts */;
+			targetProxy = 432EA7372651736100B33C55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		432EA699264FCD4000B33C55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				432EA69A264FCD4000B33C55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		432EA69E264FCD4000B33C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		432EA69F264FCD4000B33C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		432EA6A1264FCD4000B33C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ElgatoShortcuts/ElgatoShortcuts.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ElgatoShortcuts/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ElgatoShortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejm.ElgatoShortcuts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		432EA6A2264FCD4000B33C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ElgatoShortcuts/ElgatoShortcuts.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ElgatoShortcuts/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ElgatoShortcuts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejm.ElgatoShortcuts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		432EA73A2651736100B33C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ElgatoShortcutsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejm.ElgatoShortcutsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElgatoShortcuts.app/Contents/MacOS/ElgatoShortcuts";
+			};
+			name = Debug;
+		};
+		432EA73B2651736100B33C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ElgatoShortcutsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.kylejm.ElgatoShortcutsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ElgatoShortcuts.app/Contents/MacOS/ElgatoShortcuts";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		432EA688264FCD4000B33C55 /* Build configuration list for PBXProject "ElgatoShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432EA69E264FCD4000B33C55 /* Debug */,
+				432EA69F264FCD4000B33C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		432EA6A0264FCD4000B33C55 /* Build configuration list for PBXNativeTarget "ElgatoShortcuts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432EA6A1264FCD4000B33C55 /* Debug */,
+				432EA6A2264FCD4000B33C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		432EA7392651736100B33C55 /* Build configuration list for PBXNativeTarget "ElgatoShortcutsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				432EA73A2651736100B33C55 /* Debug */,
+				432EA73B2651736100B33C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		432EA72126514C9B00B33C55 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		432EA72226514C9B00B33C55 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 432EA72126514C9B00B33C55 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 432EA685264FCD4000B33C55 /* Project object */;
+}
