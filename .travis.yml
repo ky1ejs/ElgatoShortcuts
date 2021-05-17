@@ -1,0 +1,5 @@
+language: objective-c
+xcode_project: ElgatoShortcuts.xcodeproj
+xcode_scheme: ElgatoShortcutsTests
+xcode_destination: platform=macOS
+
