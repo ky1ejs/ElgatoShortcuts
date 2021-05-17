@@ -1,0 +1,20 @@
+name: macOS Tests
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: xcodebuild build-for-testing -project ElgatoShortcuts.xcodeproj -scheme ElgatoShortcuts -destination platform=macOS
+      - name: Test
+        run: xcodebuild test-without-building -project ElgatoShortcuts.xcodeproj -scheme ElgatoShortcuts -destination platform=macOS
