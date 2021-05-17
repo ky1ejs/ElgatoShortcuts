@@ -10,7 +10,6 @@ import XCTest
 @testable import ElgatoShortcuts
 
 class ElgatoShortcutsTests: XCTestCase {
-
     func testParseConfig() throws {
         let config: LightConfig = try decoderFromJsonFile(named: "LightConfig")
         XCTAssertEqual(config.isOn, true)
@@ -39,15 +38,15 @@ class ElgatoShortcutsTests: XCTestCase {
         XCTAssertEqual(json, expected)
     }
 
-    func testNotificationRequestHashing() {
-        let a = NotificationRequest(command: .brightness(.up))
-        let b = NotificationRequest(command: .brightness(.down))
+    func testActionHashing() {
+        let a = Action(command: .brightness(.up))
+        let b = Action(command: .brightness(.down))
         XCTAssertEqual(a.hashValue, b.hashValue)
     }
 
-    func testNotificationRequestEquality() {
-        let a = NotificationRequest(command: .brightness(.up))
-        let b = NotificationRequest(command: .brightness(.down))
+    func testActionEquality() {
+        let a = Action(command: .brightness(.up))
+        let b = Action(command: .brightness(.down))
         XCTAssertEqual(a, b)
     }
 }

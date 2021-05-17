@@ -18,6 +18,19 @@
 		432EA7432651776200B33C55 /* BrightnessUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 432EA7422651776200B33C55 /* BrightnessUpdate.json */; };
 		432EA74D265177B000B33C55 /* IsOnUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 432EA74C265177B000B33C55 /* IsOnUpdate.json */; };
 		432EA753265179C800B33C55 /* TemperatureUpdate.json in Resources */ = {isa = PBXBuildFile; fileRef = 432EA752265179C800B33C55 /* TemperatureUpdate.json */; };
+		432EA7572651A8B100B33C55 /* ActionObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA7562651A8B100B33C55 /* ActionObserver.swift */; };
+		432EA75B2651A90D00B33C55 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA75A2651A90D00B33C55 /* Action.swift */; };
+		432EA75F2651AA5400B33C55 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA75E2651AA5400B33C55 /* RequestBuilder.swift */; };
+		432EA7632651B3AF00B33C55 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA7622651B3AF00B33C55 /* NetworkClient.swift */; };
+		432EA7672651DB7F00B33C55 /* ActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA7662651DB7F00B33C55 /* ActionController.swift */; };
+		432EA76D2651DC5B00B33C55 /* LightConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA76C2651DC5B00B33C55 /* LightConfig.swift */; };
+		432EA7712651DC7700B33C55 /* LightCodingKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA7702651DC7700B33C55 /* LightCodingKeys.swift */; };
+		432EA7752651DC9500B33C55 /* LightConfigUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA7742651DC9500B33C55 /* LightConfigUpdate.swift */; };
+		432EA7792651DCA700B33C55 /* Int+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA7782651DCA700B33C55 /* Int+Helpers.swift */; };
+		432EA78226525C9900B33C55 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA78126525C9900B33C55 /* Endpoint.swift */; };
+		432EA78626525D0B00B33C55 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA78526525D0B00B33C55 /* JSON.swift */; };
+		432EA78B26525D7700B33C55 /* ElgatoLightAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA78A26525D7700B33C55 /* ElgatoLightAPI.swift */; };
+		432EA793265265CE00B33C55 /* LightConfigUpdateBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432EA792265265CE00B33C55 /* LightConfigUpdateBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +81,19 @@
 		432EA7422651776200B33C55 /* BrightnessUpdate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BrightnessUpdate.json; sourceTree = "<group>"; };
 		432EA74C265177B000B33C55 /* IsOnUpdate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IsOnUpdate.json; sourceTree = "<group>"; };
 		432EA752265179C800B33C55 /* TemperatureUpdate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TemperatureUpdate.json; sourceTree = "<group>"; };
+		432EA7562651A8B100B33C55 /* ActionObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionObserver.swift; sourceTree = "<group>"; };
+		432EA75A2651A90D00B33C55 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		432EA75E2651AA5400B33C55 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		432EA7622651B3AF00B33C55 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		432EA7662651DB7F00B33C55 /* ActionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionController.swift; sourceTree = "<group>"; };
+		432EA76C2651DC5B00B33C55 /* LightConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightConfig.swift; sourceTree = "<group>"; };
+		432EA7702651DC7700B33C55 /* LightCodingKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightCodingKeys.swift; sourceTree = "<group>"; };
+		432EA7742651DC9500B33C55 /* LightConfigUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightConfigUpdate.swift; sourceTree = "<group>"; };
+		432EA7782651DCA700B33C55 /* Int+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Helpers.swift"; sourceTree = "<group>"; };
+		432EA78126525C9900B33C55 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		432EA78526525D0B00B33C55 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		432EA78A26525D7700B33C55 /* ElgatoLightAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElgatoLightAPI.swift; sourceTree = "<group>"; };
+		432EA792265265CE00B33C55 /* LightConfigUpdateBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightConfigUpdateBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +139,10 @@
 			children = (
 				432EA690264FCD4000B33C55 /* AppDelegate.swift */,
 				432EA692264FCD4000B33C55 /* ContentView.swift */,
+				432EA7782651DCA700B33C55 /* Int+Helpers.swift */,
+				432EA7972652662F00B33C55 /* Actions */,
+				432EA78926525D4F00B33C55 /* ElgatoAPI */,
+				432EA77E26525C5D00B33C55 /* Networking */,
 				432EA694264FCD4000B33C55 /* Assets.xcassets */,
 				432EA699264FCD4000B33C55 /* Main.storyboard */,
 				432EA69C264FCD4000B33C55 /* Info.plist */,
@@ -148,6 +178,39 @@
 				432EA7362651736100B33C55 /* Info.plist */,
 			);
 			path = ElgatoShortcutsTests;
+			sourceTree = "<group>";
+		};
+		432EA77E26525C5D00B33C55 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				432EA75E2651AA5400B33C55 /* RequestBuilder.swift */,
+				432EA7622651B3AF00B33C55 /* NetworkClient.swift */,
+				432EA78126525C9900B33C55 /* Endpoint.swift */,
+				432EA78526525D0B00B33C55 /* JSON.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		432EA78926525D4F00B33C55 /* ElgatoAPI */ = {
+			isa = PBXGroup;
+			children = (
+				432EA78A26525D7700B33C55 /* ElgatoLightAPI.swift */,
+				432EA792265265CE00B33C55 /* LightConfigUpdateBuilder.swift */,
+				432EA7742651DC9500B33C55 /* LightConfigUpdate.swift */,
+				432EA7702651DC7700B33C55 /* LightCodingKeys.swift */,
+				432EA76C2651DC5B00B33C55 /* LightConfig.swift */,
+			);
+			path = ElgatoAPI;
+			sourceTree = "<group>";
+		};
+		432EA7972652662F00B33C55 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				432EA7562651A8B100B33C55 /* ActionObserver.swift */,
+				432EA7662651DB7F00B33C55 /* ActionController.swift */,
+				432EA75A2651A90D00B33C55 /* Action.swift */,
+			);
+			path = Actions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +325,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				432EA75F2651AA5400B33C55 /* RequestBuilder.swift in Sources */,
+				432EA78626525D0B00B33C55 /* JSON.swift in Sources */,
 				432EA693264FCD4000B33C55 /* ContentView.swift in Sources */,
+				432EA76D2651DC5B00B33C55 /* LightConfig.swift in Sources */,
+				432EA7672651DB7F00B33C55 /* ActionController.swift in Sources */,
+				432EA7632651B3AF00B33C55 /* NetworkClient.swift in Sources */,
+				432EA7752651DC9500B33C55 /* LightConfigUpdate.swift in Sources */,
+				432EA75B2651A90D00B33C55 /* Action.swift in Sources */,
+				432EA78B26525D7700B33C55 /* ElgatoLightAPI.swift in Sources */,
+				432EA793265265CE00B33C55 /* LightConfigUpdateBuilder.swift in Sources */,
+				432EA7712651DC7700B33C55 /* LightCodingKeys.swift in Sources */,
+				432EA7792651DCA700B33C55 /* Int+Helpers.swift in Sources */,
 				432EA691264FCD4000B33C55 /* AppDelegate.swift in Sources */,
+				432EA78226525C9900B33C55 /* Endpoint.swift in Sources */,
+				432EA7572651A8B100B33C55 /* ActionObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
