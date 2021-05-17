@@ -11,7 +11,9 @@ struct RequestBuilder {
     func build<E: Endpoint>(_ endpoint: E, payload: E.Payload) throws -> URLRequest {
         var request = URLRequest(url: endpoint.url)
         request.httpMethod = endpoint.method.rawValue
-        try E.S.serialize(entity: payload, inTo: &request)
+        if endpoint.method != .get {
+            try E.S.serialize(entity: payload, inTo: &request)
+        }
         return request
     }
 }
