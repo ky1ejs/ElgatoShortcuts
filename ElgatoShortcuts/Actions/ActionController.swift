@@ -11,16 +11,21 @@ import OrderedCollections
 class ActionController {
     private let client: NetworkClient
     private let updateBuilder = LightConfigUpdateBuilder()
+    private let observer: ActionObserver
 
     private var queue = OrderedSet<Action>()
     private var latestConfig: LightConfig?
     private var actionInFlight: Action?
 
-    init(client: NetworkClient = .init()) {
+    init(client: NetworkClient = .init(), observer: ActionObserver = .init()) {
         self.client = client
+        self.observer = observer
+        observer.handler = { [weak self] action in
+            self?.execute(action)
+        }
     }
 
-    func execute(_ action: Action) {
+    private func execute(_ action: Action) {
         _ = queue.updateOrAppend(action)
         run()
     }

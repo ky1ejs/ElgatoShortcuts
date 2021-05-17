@@ -8,8 +8,9 @@
 import Foundation
 
 final class ActionObserver {
+    typealias ActionFired = (Action) -> ()
     private let notificationCenter: DistributedNotificationCenter
-    private let actionController: ActionController
+    var handler: ActionFired?
 
     private static let commandMap: [String : Action.Command] = [
         "ElgatoShortcuts.ToggleOnOff" : .toggleOnOff,
@@ -19,9 +20,8 @@ final class ActionObserver {
         "ElgatoShortcuts.TemperatureDown" : .temperature(.down),
     ]
 
-    init(notificationCenter: DistributedNotificationCenter = .default(), actionController: ActionController = .init()) {
+    init(notificationCenter: DistributedNotificationCenter = .default()) {
         self.notificationCenter = notificationCenter
-        self.actionController = actionController
 
         for key in type(of: self).commandMap.keys {
             notificationCenter.addObserver(forName: NSNotification.Name(key), object: nil, queue: nil) { [weak self] notification in
@@ -40,6 +40,6 @@ final class ActionObserver {
             return
         }
 
-        actionController.execute(Action(command: command))
+        handler?(Action(command: command))
     }
 }
